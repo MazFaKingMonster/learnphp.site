@@ -28,7 +28,6 @@ h2 {
 	margin: 10px 5px 20px 25%; /* Значения отступа от левого блока */
 	padding: 5px; /* Поля внутри блока */
 	border: 1px solid #333; /* Рамка контента */
-	height: 100%;
 	flex: 1 0 auto;
 }
 .footer {

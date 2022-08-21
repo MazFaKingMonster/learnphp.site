@@ -35,7 +35,7 @@ include "fucking_while.inc.php";
 include "fucking_do-while.inc.php";
 
 #foreach
-include  "fucking_foreach.inc.php";
+include "fucking_foreach.inc.php";
 
 	# Функции
 
@@ -56,8 +56,3 @@ include "fucking_functions.inc.php";
 <!---->
 <!--Здравствуйте, --><?php //echo ($_POST['name']); ?><!--.-->
 <!--Вам --><?php //echo (int)$_POST['age']; ?><!-- лет.-->
-
-
-
-
-?>

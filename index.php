@@ -1,5 +1,6 @@
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
     <title>Fucking PHP</title>
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
 </head>
