@@ -9,7 +9,7 @@
 <div class="header"><h1>Изучаю PHP</h1></div>
 <div class="sidebar">
     <p><a href="index.php">Главная</a></p>
-
+    <p><a href="index.php?id=   error">Error Reporting</a></p>
     <p><a href="index.php?id=   do-while">Do-While</a></p>
     <p><a href="index.php?id=   for">For</a></p>
     <p><a href="index.php?id=   foreach">Foreach</a></p>
@@ -26,6 +26,9 @@
     $id = strtolower(strip_tags(trim($_GET['id'])));
 
     switch($id){
+        case 'error':
+            include 'my_error_reporting.php';
+            break;
         case 'do-while':
             include 'learning_fucking_php/fucking_do-while.inc.php';
             break;
