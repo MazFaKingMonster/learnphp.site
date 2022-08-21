@@ -1,5 +1,9 @@
 <html lang="ru">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <title>Fucking PHP</title>
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
@@ -8,16 +12,17 @@
 <body>
 <div class="header"><h1>Изучаю PHP</h1></div>
 <div class="sidebar">
-    <p><a href="index.php">Главная</a></p>
-    <p><a href="index.php?id=   error">Error Reporting</a></p>
-    <p><a href="index.php?id=   do-while">Do-While</a></p>
-    <p><a href="index.php?id=   for">For</a></p>
-    <p><a href="index.php?id=   foreach">Foreach</a></p>
-    <p><a href="index.php?id=   functions">Functions</a></p>
-    <p><a href="index.php?id=   if">If</a></p>
-    <p><a href="index.php?id=   switch">Switch</a></p>
-    <p><a href="index.php?id=   types">Types</a></p>
-    <p><a href="index.php?id=   while">While</a></p>
+
+    <p><a class="atuin-btn" href="index.php">Главная</a></p>
+    <p><a class="atuin-btn" href="index.php?id=   error">Error Reporting</a></p>
+    <p><a class="atuin-btn" href="index.php?id=   do-while">Do-While</a></p>
+    <p><a class="atuin-btn" href="index.php?id=   for">For</a></p>
+    <p><a class="atuin-btn" href="index.php?id=   foreach">Foreach</a></p>
+    <p><a class="atuin-btn" href="index.php?id=   functions">Functions</a></p>
+    <p><a class="atuin-btn" href="index.php?id=   if">If</a></p>
+    <p><a class="atuin-btn" href="index.php?id=   switch">Switch</a></p>
+    <p><a class="atuin-btn" href="index.php?id=   types">Types</a></p>
+    <p><a class="atuin-btn" href="index.php?id=   while">While</a></p>
 </div>
 <div class="content">
 
