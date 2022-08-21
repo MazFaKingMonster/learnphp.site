@@ -1,4 +1,11 @@
 body {
+	background: url("https://img.freepik.com/free-photo/cool-geometric-triangular-figure-in-a-neon-laser-light-great-for-backgrounds-and-wallpapers_181624-9331.jpg?w=2000");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: 0;
+
+
 	margin: 0; /* Отступы на странице */
 }
 
@@ -20,6 +27,7 @@ h1 {
 	color: white; /* Цвет текста заголовка шапки */
 }
 .do-while_title{
+	margin-left: 50%;
 	color: black;
 
 }
@@ -27,12 +35,14 @@ h2 {
 	margin-top: 0; /* Убираем отступ сверху */
 }
 .header {
+	border-bottom: 5px solid black;
 	background: gray; /* Цвет фона шапки */
 	padding: 10px; /* Поля вокруг текста */
 }
 .sidebar {
+	background: aliceblue;
 	float: left; /* Обтекание справа */
-	border: 1px solid #333; /* Рамка левого меню */
+	border: 3px solid darkgray; /* Рамка левого меню */
 	width: 20%; /* Ширина левой колонки */
 	padding: 5px; /* Поля внутри блока */
 	margin: 10px 10px 20px 5px; /* Значения отступа от блока */
@@ -41,13 +51,15 @@ h2 {
 	flex-direction: column;
 }
 .content {
+	background: ivory;
 	font-size: 24px;
 	margin: 10px 5px 20px 25%; /* Значения отступа от левого блока */
 	padding: 5px; /* Поля внутри блока */
-	border: 1px solid #333; /* Рамка контента */
+	border: 3px solid darkgray; /* Рамка контента */
 	flex: 1 0 auto;
 }
 .footer {
+	border-top: 5px solid black;
 	background: #333; /* Цвет фона подвал (футера) */
 	padding: 5px; /* Поля внутри блока */
 	color: #fff; /* Цвет текста футера */
@@ -56,6 +68,7 @@ h2 {
 }
 
 .atuin-btn {
+	position: fixed;
 	display: inline-flex;
 	margin: 1px;
 	text-decoration: none;
@@ -64,7 +77,7 @@ h2 {
 	overflow: hidden;
 	font-size: 20px;
 	line-height: 20px;
-	padding: 1px 3px;
+	padding-right: 10%;
 	color: #FFF;
 	font-weight: bold;
 	text-transform: uppercase;
