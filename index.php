@@ -54,7 +54,6 @@
             include 'learning_fucking_php/fucking.php';
     }
     ?>
-
 </div>
 <div class="footer">&copy; MazFaKingMonster</div>
 </body>
