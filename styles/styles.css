@@ -1,6 +1,9 @@
 body {
 	font: 14px Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
 	margin: 0; /* Отступы на странице */
+	background: url("https://preview.redd.it/yuvxa376f2n21.jpg?auto=webp&s=840fbaa3d1723f70f36bdfaa0464eddab0815054");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 h1 {
 	font-size: 36px; /* Размер шрифта заголовка шапки */
@@ -11,7 +14,7 @@ h2 {
 	margin-top: 0; /* Убираем отступ сверху */
 }
 .header {
-	background: gray; /* Цвет фона шапки */
+	/* background: gray; /* Цвет фона шапки */
 	padding: 10px; /* Поля вокруг текста */
 }
 .sidebar {
