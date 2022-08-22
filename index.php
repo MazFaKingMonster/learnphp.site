@@ -24,15 +24,15 @@
         </style>
 
         <ul class="menu">
-            <li><a class="atuin-btn" href="index.php">Main</a></li>
-            <li><a class="atuin-btn" href="index.php?id=   do-while">Do-While</a></li>
-            <li><a class="atuin-btn" href="index.php?id=   for">For</a></li>
-            <li><a class="atuin-btn" href="index.php?id=   foreach">Foreach</a></li>
-            <li><a class="atuin-btn" href="index.php?id=   functions">Functionh</a></li>
-            <li><a class="atuin-btn" href="index.php?id=   if">If</a></li>
-            <li><a class="atuin-btn" href="index.php?id=   switch">Switch</a></li>
-            <li><a class="atuin-btn" href="index.php?id=   types">Types</a></li>
-            <li><a class="atuin-btn" href="index.php?id=   while">While</a></li>
+            <li><a class="atuin-btn" href="index.php">Main                          </a></li>
+            <li><a class="atuin-btn" href="index.php?id=   do-while">Do-While       </a></li>
+            <li><a class="atuin-btn" href="index.php?id=   for">For                 </a></li>
+            <li><a class="atuin-btn" href="index.php?id=   foreach">Foreach         </a></li>
+            <li><a class="atuin-btn" href="index.php?id=   functions">Functionh     </a></li>
+            <li><a class="atuin-btn" href="index.php?id=   if">If                   </a></li>
+            <li><a class="atuin-btn" href="index.php?id=   switch">Switch           </a></li>
+            <li><a class="atuin-btn" href="index.php?id=   types">Types             </a></li>
+            <li><a class="atuin-btn" href="index.php?id=   while">While             </a></li>
         </ul>
     </h1></div>
 <div class="content">
