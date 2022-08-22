@@ -17,7 +17,11 @@ h2 {
 }
 .header {
 	/* background: gray; /* Цвет фона шапки */
-	padding: 10px; /* Поля вокруг текста */
+	padding: 30px; /* Поля вокруг текста */
+	background: url("https://kartinkin.net/uploads/posts/2021-07/thumbs/1626976800_13-kartinkin-com-p-fioletovaya-sakura-anime-anime-krasivo-13.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .sidebar {
 	float: left; /* Обтекание справа */
@@ -26,8 +30,9 @@ h2 {
 	padding: 5px; /* Поля внутри блока */
 	margin: 10px 10px 20px 5px; /* Значения отступа от блока */
 	
-	display: flex;
+	display: compact;
 	flex-direction: column;
+	position: fixed;
 }
 .content {
 	margin: 10px 5px 20px 25%; /* Значения отступа от левого блока */
@@ -41,4 +46,41 @@ h2 {
 	color: #fff; /* Цвет текста футера */
 	clear: left; /* Отменяем действие float */
 	flex: 0 0 auto;
+}
+.atuin-btn {
+	display: inline-flex;
+	margin: 10px;
+	text-decoration: none;
+	position: relative;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 12px 30px;
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', Тahoma, sans-serif;
+	background: #337AB7;
+	cursor: pointer;
+	border: 2px solid #BFE2FF;
+	transition: transform 0.2s ease-out, padding 0.2s ease-out;
+	overflow: hidden;
+}
+.atuin-btn:hover,
+.atuin-btn:active,
+.atuin-btn:focus {
+	color: #FFF;
+	transform: rotate(-2deg);
+	padding: 12px 50px 12px 10px;
+}
+.atuin-btn:before {
+	content: "\27A4";
+	position: absolute;
+	right: -30px;
+	color: #1C4B73;
+	transition: right 0.5s cubic-bezier(.97,.01,.97,.55);
+}
+.atuin-btn:hover:before,
+.atuin-btn:active:before,
+.atuin-btn:focus:before {
+	right: 10px;
 }
