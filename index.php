@@ -9,18 +9,32 @@
 </head>
 
 <body>
-<div class="header"><h1>Studing PHP</h1></div>
-<div class="sidebar">
-    <p><a class="atuin-btn" href="index.php">Main</a></p>
-    <p><a class="atuin-btn" href="index.php?id=   do-while">Do-While</a></p>
-    <p><a class="atuin-btn" href="index.php?id=   for">For</a></p>
-    <p><a class="atuin-btn" href="index.php?id=   foreach">Foreach</a></p>
-    <p><a class="atuin-btn" href="index.php?id=   functions">Functions</a></p>
-    <p><a class="atuin-btn" href="index.php?id=   if">If</a></p>
-    <p><a class="atuin-btn" href="index.php?id=   switch">Switch</a></p>
-    <p><a class="atuin-btn" href="index.php?id=   types">Types</a></p>
-    <p><a class="atuin-btn" href="index.php?id=   while">While</a></p>
-</div>
+<div class="header"><h1>
+        <style type="text/css">
+            .menu {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            .menu li {
+                margin: 0 10px 0 0;
+                padding: 0;
+                display: inline-block;
+            }
+        </style>
+
+        <ul class="menu">
+            <li><a class="atuin-btn" href="index.php">Main</a></li>
+            <li><a class="atuin-btn" href="index.php?id=   do-while">Do-While</a></li>
+            <li><a class="atuin-btn" href="index.php?id=   for">For</a></li>
+            <li><a class="atuin-btn" href="index.php?id=   foreach">Foreach</a></li>
+            <li><a class="atuin-btn" href="index.php?id=   functions">Functionh</a></li>
+            <li><a class="atuin-btn" href="index.php?id=   if">If</a></li>
+            <li><a class="atuin-btn" href="index.php?id=   switch">Switch</a></li>
+            <li><a class="atuin-btn" href="index.php?id=   types">Types</a></li>
+            <li><a class="atuin-btn" href="index.php?id=   while">While</a></li>
+        </ul>
+    </h1></div>
 <div class="content">
 
     <?php

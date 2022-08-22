@@ -46,6 +46,8 @@ h2 {
 	color: #fff; /* Цвет текста футера */
 	clear: left; /* Отменяем действие float */
 	flex: 0 0 auto;
+	position: fixed;
+	bottom: 0;
 }
 .atuin-btn {
 	display: inline-flex;
