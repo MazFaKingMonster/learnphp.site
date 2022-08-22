@@ -11,7 +11,7 @@
 <body>
 <div class="header"><h1>Изучаю PHP</h1></div>
 <div class="sidebar">
-    <p><a href="index.php">Главная</a></p>
+    <p><a href="index.php">Main></p>
 
     <p><a href="index.php?id=   do-while">Do-While</a></p>
     <p><a href="index.php?id=   for">For</a></p>
