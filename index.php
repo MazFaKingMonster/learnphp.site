@@ -1,19 +1,19 @@
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Fucking PHP</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fucking PHP</title>
 
-    <?php
-    include "link.html"  //cылки на css
-    ?>
+        <?php
+            include "link.html"  //cылки на css
+        ?>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    </head>
 
 <body>
-<div class="header"><h1>
+    <div class="header"><h1>
         <style type="text/css">
             .menu {
                 margin: 0;
@@ -40,12 +40,11 @@
         </ul>
 
     </h1></div>
+
 </body>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 <body>
 
 <div class="vertical-menu">
@@ -57,42 +56,45 @@
 </div>
 
 </body>
-<div class="content">
+    <div class="content">
 
-    <?php
+        <?php
 
-    $id = strtolower(strip_tags(trim($_GET['id'])));
+        $id = strtolower(strip_tags(trim($_GET['id'])));
 
-    switch($id){
-        case 'do-while':
-            include 'learning_fucking_php/fucking_do-while.inc.php';
-            break;
-        case 'for':
-            include 'learning_fucking_php/fucking_for.inc.php';
-            break;
-        case 'foreach':
-            include 'learning_fucking_php/fucking_foreach.inc.php';
-            break;
-        case 'functions':
-            include 'learning_fucking_php/fucking_functions.inc.php';
-            break;
-        case 'if':
-            include 'learning_fucking_php/fucking_if.inc.php';
-            break;
-        case 'switch':
-            include 'learning_fucking_php/fucking_switch.inc.php';
-            break;
-        case 'types':
-            include 'learning_fucking_php/fucking_types.inc.php';
-            break;
-        case 'while':
-            include 'learning_fucking_php/fucking_while.inc.php';
-            break;
-        default:
-            include 'learning_fucking_php/fucking.php';
-    }
-    ?>
-</div>
-<div class="footer">&copy; MazFaKingMonster</div>
-</body>
+        switch($id){
+            case 'do-while':
+                include 'learning_fucking_php/fucking_do-while.inc.php';
+                break;
+            case 'for':
+                include 'learning_fucking_php/fucking_for.inc.php';
+                break;
+            case 'foreach':
+                include 'learning_fucking_php/fucking_foreach.inc.php';
+                break;
+            case 'functions':
+                include 'learning_fucking_php/fucking_functions.inc.php';
+                break;
+            case 'if':
+                include 'learning_fucking_php/fucking_if.inc.php';
+                break;
+            case 'switch':
+                include 'learning_fucking_php/fucking_switch.inc.php';
+                break;
+            case 'types':
+                include 'learning_fucking_php/fucking_types.inc.php';
+                break;
+            case 'while':
+                include 'learning_fucking_php/fucking_while.inc.php';
+                break;
+            default:
+                include 'learning_fucking_php/fucking.php';
+        }
+        ?>
+
+    </div>
+
+    <div class="footer">&copy; MazFaKingMonster</div>
+
+    </body>
 </html>

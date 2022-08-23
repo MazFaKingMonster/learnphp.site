@@ -35,25 +35,12 @@ h2 {
 	transition: transform 0.2s ease-out, padding 0.2s ease-out;
 	overflow: hidden;
 }
-.atuin-btn:hover,
-.atuin-btn:active,
-.atuin-btn:focus {
-	color: #FFF;
-	transform: rotate(-2deg);
-	padding: 12px 50px 12px 10px;
-}
-.atuin-btn:before {
-	content: "\27A4";
-	position: absolute;
-	right: -30px;
-	color: #1C4B73;
-	transition: right 0.5s cubic-bezier(.97,.01,.97,.55);
-}
 .atuin-btn:hover:before,
 .atuin-btn:active:before,
 .atuin-btn:focus:before {
 	right: 10px;
 }
+
 
 .vertical-menu {
 	width: 20%; margin-top: 5%; border: 2px solid black;
@@ -74,4 +61,9 @@ h2 {
 .vertical-menu a.active {
 	background-color: #4CAF50;
 	color: white;
+}
+.vertical-menu {
+	width: 200px;
+	height: 150px;
+	overflow-y: auto;
 }
