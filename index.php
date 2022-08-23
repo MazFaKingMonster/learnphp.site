@@ -23,18 +23,36 @@
             }
         </style>
 
+            <button class="atuin-btn"><a href="index.php">Main                          </a></button>
         <ul class="menu">
-            <li><a class="atuin-btn" href="index.php">Main                          </a></li>
-            <li><a class="atuin-btn" href="index.php?id=   do-while">Do-While       </a></li>
-            <li><a class="atuin-btn" href="index.php?id=   for">For                 </a></li>
-            <li><a class="atuin-btn" href="index.php?id=   foreach">Foreach         </a></li>
-            <li><a class="atuin-btn" href="index.php?id=   functions">Functionh     </a></li>
-            <li><a class="atuin-btn" href="index.php?id=   if">If                   </a></li>
-            <li><a class="atuin-btn" href="index.php?id=   switch">Switch           </a></li>
-            <li><a class="atuin-btn" href="index.php?id=   types">Types             </a></li>
-            <li><a class="atuin-btn" href="index.php?id=   while">While             </a></li>
+            <button class="atuin-btn"><a  href="index.php?id=   do-while">Do-While       </a></button>
+            <button class="atuin-btn"><a  href="index.php?id=   for">For                 </a></button>
+            <button class="atuin-btn"><a  href="index.php?id=   foreach">Foreach         </a></button>
+            <button class="atuin-btn"><a  href="index.php?id=   functions">Functionh     </a></button>
+            <button class="atuin-btn"><a  href="index.php?id=   if">If                   </a></button>
+            <button class="atuin-btn"><a  href="index.php?id=   switch">Switch           </a></button>
+            <button class="atuin-btn"><a  href="index.php?id=   types">Types             </a></button>
+            <button class="atuin-btn"><a  href="index.php?id=   while">While             </a></button>
         </ul>
+
     </h1></div>
+</body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="vertical-menu">
+    <a href="#" class="active">Home</a>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+</div>
+
+</body>
 <div class="content">
 
     <?php

@@ -35,7 +35,7 @@ h2 {
 	position: fixed;
 }
 .content {
-	margin: 10px 5px 20px 25%; /* Значения отступа от левого блока */
+	margin: -200px 1% 20px 22%; /* Значения отступа от левого блока первое значение с ТОП..  второе отступ справа 3- */
 	padding: 5px; /* Поля внутри блока */
 	border: 1px solid #333; /* Рамка контента */
 	flex: 1 0 auto;
@@ -49,9 +49,11 @@ h2 {
 	position: fixed;
 	bottom: 0;
 }
+
 .atuin-btn {
+	height: 5%;
+	width: 8.7%;
 	display: inline-flex;
-	margin: 10px;
 	text-decoration: none;
 	position: relative;
 	font-size: 20px;
@@ -85,4 +87,25 @@ h2 {
 .atuin-btn:active:before,
 .atuin-btn:focus:before {
 	right: 10px;
+}
+
+.vertical-menu {
+	width: 20%; margin-top: 5%; border: 2px solid black;
+}
+
+.vertical-menu a {
+	background-color: #eee;
+	color: black;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+}
+
+.vertical-menu a:hover {
+	background-color: #ccc;
+}
+
+.vertical-menu a.active {
+	background-color: #4CAF50;
+	color: white;
 }
