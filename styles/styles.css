@@ -15,40 +15,6 @@ h1 {
 h2 {
 	margin-top: 0; /* Убираем отступ сверху */
 }
-.header {
-	/* background: gray; /* Цвет фона шапки */
-	padding: 30px; /* Поля вокруг текста */
-	background: url("https://kartinkin.net/uploads/posts/2021-07/thumbs/1626976800_13-kartinkin-com-p-fioletovaya-sakura-anime-anime-krasivo-13.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.sidebar {
-	float: left; /* Обтекание справа */
-	border: 1px solid #333; /* Рамка левого меню */
-	width: 20%; /* Ширина левой колонки */
-	padding: 5px; /* Поля внутри блока */
-	margin: 10px 10px 20px 5px; /* Значения отступа от блока */
-	
-	display: compact;
-	flex-direction: column;
-	position: fixed;
-}
-.content {
-	margin: -200px 1% 20px 22%; /* Значения отступа от левого блока первое значение с ТОП..  второе отступ справа 3- */
-	padding: 5px; /* Поля внутри блока */
-	border: 1px solid #333; /* Рамка контента */
-	flex: 1 0 auto;
-}
-.footer {
-	background: #333; /* Цвет фона подвал (футера) */
-	padding: 5px; /* Поля внутри блока */
-	color: #fff; /* Цвет текста футера */
-	clear: left; /* Отменяем действие float */
-	flex: 0 0 auto;
-	position: fixed;
-	bottom: 0;
-}
 
 .atuin-btn {
 	height: 5%;

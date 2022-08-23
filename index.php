@@ -2,7 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Fucking PHP</title>
-    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+    <?php
+    include "link.html"  //cылки на css
+    ?>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
