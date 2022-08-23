@@ -6,7 +6,6 @@
         <?php
             include "link.html"  //cылки на css
         ?>
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
@@ -26,7 +25,11 @@
                 display: inline-block;
             }
         </style>
-
+        <div class="navigation">
+            <div class="userBx"></div>
+                <div class="imgBx"></div>
+                    <img src="user.jpg">
+        </div>
             <button class="atuin-btn"><a href="index.php">Main                          </a></button>
         <ul class="menu">
             <button class="atuin-btn"><a  href="index.php?id=   do-while">Do-While       </a></button>
