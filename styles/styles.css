@@ -1,110 +1,71 @@
 body {
-	background: url("https://img.freepik.com/free-photo/cool-geometric-triangular-figure-in-a-neon-laser-light-great-for-backgrounds-and-wallpapers_181624-9331.jpg?w=2000");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	z-index: 0;
-
-
+	font: 14px Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
 	margin: 0; /* Отступы на странице */
+	font-family: 'Aboreto', cursive;
 }
-
-.code{
-	padding: 20px;
-	background: #333333;
-	font-size: 24px;
-	color: ivory;
-	block-size: auto;
-	height: 20%;
-	margin-left: 10%;
-	width: 50%;
-}
-
 h1 {
-	font-family: 'Bebas Neue', cursive;
-	font-size: 36px; /* Размер шрифта заголовка шапки */
+	font-size: 15px; /* Размер шрифта заголовка шапки */
 	margin: 0; /* Убираем отступы */
 	color: white; /* Цвет текста заголовка шапки */
-}
-.do-while_title{
-	margin-left: 50%;
-	color: black;
-
 }
 h2 {
 	margin-top: 0; /* Убираем отступ сверху */
 }
-.header {
-	border-bottom: 5px solid black;
-	background: gray; /* Цвет фона шапки */
-	padding: 10px; /* Поля вокруг текста */
-}
-.sidebar {
-	background: aliceblue;
-	float: left; /* Обтекание справа */
-	border: 3px solid darkgray; /* Рамка левого меню */
-	width: 20%; /* Ширина левой колонки */
-	padding: 5px; /* Поля внутри блока */
-	margin: 10px 10px 20px 5px; /* Значения отступа от блока */
-	
-	display: flex;
-	flex-direction: column;
-}
-.content {
-	background: ivory;
-	font-size: 24px;
-	margin: 10px 5px 20px 25%; /* Значения отступа от левого блока */
-	padding: 5px; /* Поля внутри блока */
-	border: 3px solid darkgray; /* Рамка контента */
-	flex: 1 0 auto;
-}
-.footer {
-	border-top: 5px solid black;
-	background: #333; /* Цвет фона подвал (футера) */
-	padding: 5px; /* Поля внутри блока */
-	color: #fff; /* Цвет текста футера */
-	clear: left; /* Отменяем действие float */
-	flex: 0 0 auto;
+h3{
+	margin: 0;
 }
 
 .atuin-btn {
-	position: fixed;
+	height: 5%;
+	width: 8.5%;
 	display: inline-flex;
-	margin: 1px;
-	text-decoration: none;
-	border: 2px solid darkgray;
 	position: relative;
-	overflow: hidden;
 	font-size: 20px;
 	line-height: 20px;
-	padding-right: 10%;
+	padding: 12px 10px;
 	color: #FFF;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-family: 'Roboto Condensed', Тahoma, sans-serif;
-	background: gray;
-	transition: box-shadow 0.3s, transform 0.3s;
+	background: #337AB7;
 	cursor: pointer;
-}
-.atuin-btn:hover,
-.atuin-btn:active,
-.atuin-btn:focus {
-	transform: translateY(-4px);
-	box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
-	color: #FFF;
-}
-.atuin-btn:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(-45deg, transparent, rgba(191, 226, 255, 0.3), transparent);
-	transition: left 0.7s;
+	border: 2px solid #BFE2FF;
+	overflow: hidden;
+	text-decoration: none;
 }
 .atuin-btn:hover:before,
 .atuin-btn:active:before,
 .atuin-btn:focus:before {
-	left: 100%;
+	right: 10px;
+}
+
+
+.vertical-menu {
+	width: 20%;
+	margin-top: 1%;
+	border: 2px solid #ee8b53;
+	margin-left: 0.2%;
+
+}
+
+.vertical-menu a {
+	background-color: #eee;
+	color: #e35e00;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+}
+
+.vertical-menu a:hover {
+	background-color: #ccc;
+}
+
+.vertical-menu a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+.vertical-menu {
+	width: 200px;
+	height: 150px;
+	overflow-y: auto;
 }
