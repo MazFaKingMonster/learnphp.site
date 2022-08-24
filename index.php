@@ -1,8 +1,6 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Fucking PHP</title>
-
         <?php
             include "link.html"  //cылки на css
         ?>
@@ -17,7 +15,6 @@
             .menu {
                 margin: 0;
                 padding: 0;
-                list-style-type: none;
             }
             .menu li {
                 margin: 0 10px 0 0;
@@ -40,16 +37,21 @@
 
     </h1></div>
 
+<body>
     <h1>
         <div class="navigation">
             <div class="userBx">
                 <div class="imgBx">
                     <img src="user.jpg">
                 </div>
+                <p class="username">Max</p>
+
             </div>
                 <div class="menuToggle"></div>
             </div>
     </h1>
+</body>
+
     <script>
        let menuToggle = document.querySelector('.menuToggle');
        let navigation = document.querySelector('.navigation');

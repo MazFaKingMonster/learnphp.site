@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu' , sans-serif;
+    font-family: 'Ubuntu' , sans-serif;  /* можгл удалить нахрен*/
 }
 body {
     min-height: 100vh;
@@ -21,12 +21,17 @@ body {
     box-shadow: 0 25px 35px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
-    transition: height 0.5s, width 0.5s;
+    transition: height 0.5s, width 0.5s;/*скорость окна влево*/
+    transition-delay: 0s, 0.75s;/*скорость окна вниз*/
 }
 .navigation.active
 {
     width: 300px;
     height: 400px;
+
+    transition: width 0.5s, height 0.5s;/*скорость окна вверх*/
+    transition-delay: 0s, 0.75s; /*скорость окна вверх*/
+
 }
 .navigation .userBx
 {
@@ -34,6 +39,22 @@ body {
     width: 60px;
     height: 60px;
     background: #ffffff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.navigation.active .userBx
+{
+    width: calc(100% - 60px);
+}
+
+.navigation .userBx .username
+{
+    white-space: nowrap;
+    color:  #555;
+    font-size: 1.1em;
 }
 .navigation .userBx .imgBx
 {
@@ -45,6 +66,7 @@ body {
     border-radius: 50%;
     border: 10px solid #ffffff;
 }
+
 .navigation .userBx .imgBx img
 {
     position: absolute;
@@ -87,10 +109,10 @@ body {
 }
 .navigation.active .menuToggle::before
 {
-    transform: translateY(0px) rotate(45deg);
+    transform: translateY(0px) rotate(45deg);/*угл поворота палочек*/
     box-shadow: 0 0 #555;
 }
 .navigation.active .menuToggle::after
 {
-    transform: translateY(0px) rotate(-45deg);
+    transform: translateY(0px) rotate(-45deg); /*угл поворота палочек*/
 }
