@@ -25,11 +25,7 @@
                 display: inline-block;
             }
         </style>
-        <div class="navigation">
-            <div class="userBx"></div>
-                <div class="imgBx"></div>
-                    <img src="user.jpg">
-        </div>
+
             <button class="atuin-btn"><a href="index.php">Main                          </a></button>
         <ul class="menu">
             <button class="atuin-btn"><a  href="index.php?id=   do-while">Do-While       </a></button>
@@ -44,6 +40,23 @@
 
     </h1></div>
 
+    <h1>
+        <div class="navigation">
+            <div class="userBx">
+                <div class="imgBx">
+                    <img src="user.jpg">
+                </div>
+            </div>
+                <div class="menuToggle"></div>
+            </div>
+    </h1>
+    <script>
+       let menuToggle = document.querySelector('.menuToggle');
+       let navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function () {
+            navigation.classList.toggle('active')
+        }
+    </script>
 </body>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
