@@ -47,14 +47,16 @@
             </div>
             <div class="menuToggle"></div>
                 <ul class="menu">
-                    <li><a href="#">My Profile</a></li>
-                    <li><a href="#">Messanger</a></li>
-                    <li><a href="#">Notification</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Help & Suport</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="#"><ion-icon name="person-outline"></ion-icon> My Profile</a></li>
+                    <li><a href="#"><ion-icon name="person-outline"></ion-icon> Messager</a></li>
+                    <li><a href="#"><ion-icon name="notifications-outline"></ion-icon> Notification</a></li>
+                    <li><a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a></li>
+                    <li><a href="#"><ion-icon name="help-outline"></ion-icon> Help & Suport</a></li>
+                    <li><a href="#"><ion-icon name="log-out-outline"></ion-icon> Logout</a></li>
                 </ul>
             </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script>
             let menuToggle = document.querySelector('.menuToggle');
             let navigation = document.querySelector('.navigation');
