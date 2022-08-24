@@ -12,11 +12,11 @@
 <body>
     <div class="header"><h1>
         <style type="text/css">
-            .menu {
+            .meni {
                 margin: 0;
                 padding: 0;
             }
-            .menu li {
+            .meni li {
                 margin: 0 10px 0 0;
                 padding: 0;
                 display: inline-block;
@@ -24,7 +24,7 @@
         </style>
 
             <button class="atuin-btn"><a href="index.php">Main                           </a></button>
-        <ul class="menu">
+        <ul class="meni">
             <button class="atuin-btn"><a  href="index.php?id=   do-while">Do-While       </a></button>
             <button class="atuin-btn"><a  href="index.php?id=   for">For                 </a></button>
             <button class="atuin-btn"><a  href="index.php?id=   foreach">Foreach         </a></button>
