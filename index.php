@@ -1,4 +1,4 @@
-<html lang="ru">
+<html lang="eu">
     <head>
         <meta charset="UTF-8">
         <?php
@@ -23,7 +23,7 @@
             }
         </style>
 
-            <button class="atuin-btn"><a href="index.php">Main                          </a></button>
+            <button class="atuin-btn"><a href="index.php">Main                           </a></button>
         <ul class="menu">
             <button class="atuin-btn"><a  href="index.php?id=   do-while">Do-While       </a></button>
             <button class="atuin-btn"><a  href="index.php?id=   for">For                 </a></button>
@@ -36,33 +36,41 @@
         </ul>
 
     </h1></div>
-
-<body>
-    <h1>
+    <h3>
+        <body>
         <div class="navigation">
             <div class="userBx">
                 <div class="imgBx">
                     <img src="user.jpg">
                 </div>
-                <p class="username">Max</p>
+                <p class="username">Max saq</p>
+            </div>
+            <div class="menuToggle"></div>
+                <ul class="menu">
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Messanger</a></li>
+                    <li><a href="#">Notification</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Help & Suport</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        <script>
+            let menuToggle = document.querySelector('.menuToggle');
+            let navigation = document.querySelector('.navigation');
+            menuToggle.onclick = function () {
+                navigation.classList.toggle('active')
+            }
+        </script>
+        </body>
+    </h3>
 
-            </div>
-                <div class="menuToggle"></div>
-            </div>
-    </h1>
 </body>
 
-    <script>
-       let menuToggle = document.querySelector('.menuToggle');
-       let navigation = document.querySelector('.navigation');
-        menuToggle.onclick = function () {
-            navigation.classList.toggle('active')
-        }
-    </script>
-</body>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+
 <body>
 
 <div class="vertical-menu">

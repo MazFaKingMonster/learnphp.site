@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu' , sans-serif;  /* можгл удалить нахрен*/
+    font-family: 'Aboreto', cursive;
+    font: 15px
 }
 body {
-    min-height: 100vh;
-    background: url("https://funart.pro/uploads/posts/2021-12/thumbs/1640303155_49-funart-pro-p-foni-s-devushkami-iz-anime-53.jpg");
+    background: url("https://funart.pro/uploads/posts/2021-04/thumbs/1618586520_30-funart_pro-p-oboi-fon-anime-rozovaya-devochka-35.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navigation
@@ -115,4 +119,13 @@ body {
 .navigation.active .menuToggle::after
 {
     transform: translateY(0px) rotate(-45deg); /*угл поворота палочек*/
+}
+.menu
+{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid rgba(,0,0,0,0.1);
 }
