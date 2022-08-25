@@ -1,6 +1,7 @@
 .footer {
+    font-size: 1.5vh;
     background: #333; /* Цвет фона подвал (футера) */
-    padding: 5px; /* Поля внутри блока */
+    padding: 1vh; /* Поля внутри блока */
     color: #fff; /* Цвет текста футера */
     clear: left; /* Отменяем действие float */
     flex: 0 0 auto;

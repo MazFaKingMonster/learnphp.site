@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Aboreto', cursive;
+
 }
 body {
     background: url("https://funart.pro/uploads/posts/2021-04/thumbs/1618586520_30-funart_pro-p-oboi-fon-anime-rozovaya-devochka-35.jpg");
@@ -28,6 +29,7 @@ body {
     transition-delay: 0s, 0.75s;/*скорость окна вниз*/
     overflow: hidden;
 }
+
 .navigation.active
 {
     width: 300px;
@@ -37,6 +39,7 @@ body {
     transition-delay: 0s, 0.75s; /*скорость окна вверх*/
 
 }
+
 .navigation .userBx
 {
     position: relative;
@@ -49,6 +52,7 @@ body {
     transition: 0.5s;
     transition-delay: 0.5s;
 }
+
 .navigation.active .userBx
 {
     width: calc(100% - 60px);
@@ -60,6 +64,7 @@ body {
     color:  #555;
     font-size: 1.1em;
 }
+
 .navigation .userBx .imgBx
 {
     position: relative;
@@ -80,6 +85,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 .navigation .menuToggle
 {
     position: relative;
@@ -90,6 +96,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .navigation .menuToggle::before
 {
     content: '';
@@ -101,6 +108,7 @@ body {
     box-shadow: 0 10px #555;
     transition: 0.5s;
 }
+
 .navigation .menuToggle::after
 {
     content: '';
@@ -111,15 +119,18 @@ body {
     transform: translateY(10px);
     transition: 0.5s;
 }
+
 .navigation.active .menuToggle::before
 {
     transform: translateY(0px) rotate(45deg);/*угл поворота палочек*/
     box-shadow: 0 0 #555;
 }
+
 .navigation.active .menuToggle::after
 {
     transform: translateY(0px) rotate(-45deg); /*угл поворота палочек*/
 }
+
 .menu
 {
     position: absolute;
@@ -127,12 +138,14 @@ body {
     height: calc(100% - 60px);
     margin-top: 60px;
     padding: 20px;
-    border-top: 1px solid rgba(,0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
+
 .menu li
 {
     list-style: none;
 }
+
 .menu li a
 {
     display: flex;
@@ -143,10 +156,12 @@ body {
     text-decoration: none;
     color: #555;
 }
+
 .menu li a:hover
 {
     color: #3a3afa;
 }
+
 .menu li a ion-icon
 {
     font-size: 1.5em;
