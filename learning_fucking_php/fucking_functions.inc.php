@@ -136,7 +136,7 @@ echo "<p>--" . return_func(11); // 22 Ёпта!
 
 // Лан, хуярим дальше пока эффект действует!(:
 
-echo "<p>Work with arguments in functions!";
+echo "<p>Work with arguments in functions-php-js!";
 
 
 	// Обьявляем функцию!

@@ -1,4 +1,7 @@
 <html lang="ru">
+<?php
+    include_once 'heeds.inc.php';
+?>
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,47 +16,15 @@
 <div class="header"><h1>Изучаю PHP</h1></div>
 <div class="sidebar">
     <?php
-    include 'draw_menu.inc.php';
-    switch($menu){
-        case 'error':
-            include 'my_error_reporting.php';
-            break;
-        case 'do-while':
-            include 'learning_fucking_php/fucking_do-while.inc.php';
-            break;
-        case 'for':
-            include 'learning_fucking_php/fucking_for.inc.php';
-            break;
-        case 'foreach':
-            include 'learning_fucking_php/fucking_foreach.inc.php';
-            break;
-        case 'functions':
-            include 'learning_fucking_php/fucking_functions.inc.php';
-            break;
-        case 'if':
-            include 'learning_fucking_php/fucking_if.inc.php';
-            break;
-        case 'switch':
-            include 'learning_fucking_php/fucking_switch.inc.php';
-            break;
-        case 'types':
-            include 'learning_fucking_php/fucking_types.inc.php';
-            break;
-        case 'while':
-            include 'learning_fucking_php/fucking_while.inc.php';
-            break;
-//                          default:
-//                              include 'learning_fucking_php/fucking.php';
-    }
+    include_once 'draw_menu.inc.php';
+    draw_menu($sections_menu, $get_sn,$get_ns);
     ?>
 </div>
 <div class="content">
 
     <?php
-
-    $id = strtolower(strip_tags(trim($_GET['id'])));
-
-
+    include_once 'show_content.inc.php';
+    show_content($sections_menu, $get_sn,$get_ns,$get_ls);
     ?>
 
 </div>

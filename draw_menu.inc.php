@@ -1,63 +1,87 @@
 <?php
-$sec_name = strtolower(strip_tags(trim($_GET['sec_name'])));
-$get_ns = strtolower(strip_tags(trim($_GET['name_section'])));
 $sections_menu = array(
     'html' => array(
-        'tags'=>'#',
-        'attributes'=>'#',
-        'form'=>'#',
-        'styles'=>'#',
-
+        'tags'=>array(
+            'tag'=>'tag',
+        ),
+        'attributes'=>array(
+            'attribute'=>'attribute',
+        ),
+        'forms'=>array(
+            'form'=>'form',
+        ),
+        'styles'=>array(
+            'style'=>'style',
+        ),
     ),
     'css' => array(
-        'text'=>'#',
-        'blocks'=>'#',
+        'text'=>array(
+            'text'=>'text',
+        ),
+        'blocks'=>array(
+            'block'=>'block',
+        ),
     ),
     'js' => array(
-        'functions'=>'#',
-        'cycles'=>'#',
+        'functions-js'=>array(
+            'function'=>'function',
+        ),
+        'cycles-js'=>array(
+            'cycle'=>'cycle',
+        ),
     ),
     'php' => array(
-        'functions'=>'#',
-        'cycles'=> array(
+        'functions-php'=>array(
+            'function'=>'function',
+        ),
+        'cycles-php'=> array(
             'for'=>'for',
             'while'=>'while',
-            'do-while'=>'do_while',
+            'do-while'=>'do-while',
             'switch'=>'switch'
         ),
-        'types'=>'#',
-        'constr'=>'#',
+        'types'=>array(
+            'type'=>'type',
+        ),
+        'constructions'=>array(
+            'construction'=>'construction',
+        ),
     ),
     'mysql' => array(
-        'tables'=>'#',
-        'data'=>'#',
+        'tables'=>array(
+            'table'=>'table',
+        ),
+        'data'=>array(
+            'data'=>'data',
+        ),
     ),
 );
 
-function draw_menu ($sections_menu, $sec_name,$get_ns){
+function draw_menu ($sections_menu, $get_sn,$get_ns){
+
   foreach ($sections_menu as $name => $s_name){
-      echo "<p><a class='atuin-btn' href='index.php?sec_name=$name'>$name</a></p>";
-        if($name == $sec_name){
+      echo "<p><a href='index.php?sec_name=$name'>$name</a></p>";
+
+        if($name == $get_sn){
           foreach ($s_name as $name_section => $link_section){
               echo "<br><p style='margin-left: 15% '>
-                            <a class='atuin-btn' 
+                            <a 
                             href=' index.php?sec_name=$name
                                   &name_section=$name_section'> $name_section</a>
                         </p>";
+
               if($name_section == $get_ns){
                   foreach ($link_section as $item => $value){
-                      echo "<br><p style='margin-left: 25% '>
-                            <a class='atuin-btn' 
+                      echo "<br><p style='margin-left: 30% '>
+                            <a
                             href=' index.php?sec_name=$name
                                   &name_section=$name_section
                                   &link_section=$item'> $item</a>
                         </p>";
                   }
-                  return $var_for_switch = strtolower(strip_tags(trim($_GET['link_section'])));
               }
           }
       }
   }
 };
-$menu = draw_menu($sections_menu, $sec_name,$get_ns);
 ?>
