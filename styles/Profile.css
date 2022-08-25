@@ -16,6 +16,7 @@ body {
 
 .navigation
 {
+    font-size: 2vh;
     position: fixed;
     top: 20px;
     right: 20px;

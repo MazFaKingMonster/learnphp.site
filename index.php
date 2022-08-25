@@ -6,12 +6,16 @@
         ?>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     </head>
 
 <body>
     <div class="header"><h1>
+
         <style type="text/css">
+
             .meni {
                 margin: 0;
                 padding: 0;
@@ -22,6 +26,15 @@
                 display: inline-block;
             }
         </style>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <span class="material-symbols-outlined">
+search
+</span>
+
+                </a>
+
+            </div>
 
             <button class="atuin-btn"><a href="index.php">Main                           </a></button>
         <ul class="meni">
