@@ -15,6 +15,7 @@
 <body>
 <div class="header"><h1>Изучаю PHP</h1></div>
 <div class="sidebar">
+    <a href="index.php">Learn</a>
     <?php
     include_once 'draw_menu.inc.php';
     draw_menu($sections_menu, $get_sn,$get_ns);
