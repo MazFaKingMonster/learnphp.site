@@ -1,6 +1,7 @@
 <html lang="ru">
 <?php
     include_once 'heeds.inc.php';
+    include_once 'structure.inc.php';
 ?>
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +18,10 @@
 <div class="sidebar">
     <a href="index.php">Learn</a>
     <?php
-    include_once 'draw_menu.inc.php';
-    draw_menu($sections_menu, $get_sn,$get_ns);
+    include_once 'draw_top_menu.inc.php';
+    include_once 'draw_sidebar_menu.inc.php';
+    draw_top_menu($sections_menu);
+    draw_sidebar_menu($sections_menu, $get_sn,$get_ns);
     ?>
 </div>
 <div class="content">
