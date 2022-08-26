@@ -1,39 +1,91 @@
-<html lang="ru">
-<?php
-    include_once 'includes/heeds.inc.php';
-    include_once 'includes/library.inc.php';
-    include_once 'interface/draw_top_menu.inc.php';
-    include_once 'interface/draw_sidebar_menu.inc.php';
-    include_once 'interface/show_content.inc.php';
-?>
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Bebas+Neue&display=swap" rel="stylesheet">
+<html lang="eu">
+    <head>
+        <meta charset="UTF-8">
+        <?php
+            include "link.html";  //cылки на css
+            include_once 'heeds.inc.php';
+            include_once 'structure.inc.php';
+        ?>
 
-    <meta charset="UTF-8">
-    <title>Fucking PHP</title>
-    <link href="styles/styles.css" rel="stylesheet" type="text/css">
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
 
 <body>
-<div class="header"><h1>Изучаю PHP</h1></div>
-<div class="sidebar">
-    <a href="index.php">Learn</a>
-    <?php
+    <div class="header">
 
-    draw_top_menu($library);
-    draw_sidebar_menu($library, $get_library_section,$get_library_chapter);
-    ?>
+
+        <a class="atuiin-btn" href="index.php">Learn</a>
+
+            <div class="meni">
+                <?php
+                include_once 'draw_top_menu.inc.php';
+                draw_top_menu($sections_menu);
+                ?>
+            </div>
+
+
+    </h1></div>
+    <h3>
+
+        <div class="navigation">
+            <div class="userBx">
+                <div class="imgBx">
+                    <img src="user.jpg">
+                </div>
+                <p class="username">Max saq</p>
+            </div>
+            <div class="menuToggle"></div>
+                <ul class="menu">
+                    <li><a href="#"><ion-icon name="person-outline"></ion-icon> My Profile</a></li>
+                    <li><a href="#"><ion-icon name="person-outline"></ion-icon> Messager</a></li>
+                    <li><a href="#"><ion-icon name="notifications-outline"></ion-icon> Notification</a></li>
+                    <li><a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a></li>
+                    <li><a href="#"><ion-icon name="help-outline"></ion-icon> Help & Suport</a></li>
+                    <li><a href="#"><ion-icon name="log-out-outline"></ion-icon> Logout</a></li>
+                </ul>
+            </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            let menuToggle = document.querySelector('.menuToggle');
+            let navigation = document.querySelector('.navigation');
+            menuToggle.onclick = function () {
+                navigation.classList.toggle('active')
+            }
+        </script>
+
+    </h3>
+
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+
+
+<div class="vertical-menu">
+
+<?php
+include 'draw_sidebar_menu.inc.php';
+draw_sidebar_menu($sections_menu, $get_sn, $get_ns);
+?>
+
+
+
 </div>
-<div class="content">
 
-    <?php
+    <div class="content">
+        <?php
+        include_once 'show_content.inc.php';
+        show_content($sections_menu, $get_sn,$get_ns,$get_ls);
+        ?>
 
-    show_content($library, $get_library_section,$get_library_chapter,$get_chapter_name);
-    ?>
+    </div>
 
-</div>
-<div class="footer">&copy; MazFaKingMonster</div>
-</body>
+    <div class="footer">&copy; MazFaKingMonster</div>
+
+    </body>
 </html>
