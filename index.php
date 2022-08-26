@@ -6,7 +6,6 @@
             include_once 'heeds.inc.php';
             include_once 'structure.inc.php';
         ?>
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
@@ -15,21 +14,15 @@
 
 <body>
     <div class="header">
-
-
         <a class="atuiin-btn" href="index.php">Learn</a>
-
-            <div class="meni">
+            <div >
                 <?php
                 include_once 'draw_top_menu.inc.php';
                 draw_top_menu($sections_menu);
                 ?>
             </div>
-
-
     </h1></div>
     <h3>
-
         <div class="navigation">
             <div class="userBx">
                 <div class="imgBx">
@@ -56,36 +49,22 @@
                 navigation.classList.toggle('active')
             }
         </script>
-
     </h3>
-
-
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
-
-
 <div class="vertical-menu">
-
-<?php
-include 'draw_sidebar_menu.inc.php';
-draw_sidebar_menu($sections_menu, $get_sn, $get_ns);
-?>
-
-
-
+    <?php
+        include 'draw_sidebar_menu.inc.php';
+        draw_sidebar_menu($sections_menu, $get_sn, $get_ns);
+    ?>
 </div>
-
     <div class="content">
         <?php
-        include_once 'show_content.inc.php';
-        show_content($sections_menu, $get_sn,$get_ns,$get_ls);
+            include_once 'show_content.inc.php';
+            show_content($sections_menu, $get_sn,$get_ns,$get_ls);
         ?>
-
     </div>
-
-    <div class="footer">&copy; MazFaKingMonster</div>
-
+        <div class="footer">&copy; MazFaKingMonster</div>
     </body>
 </html>
