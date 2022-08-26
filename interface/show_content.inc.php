@@ -35,7 +35,5 @@ function show_content($library,$get_library_section,$get_library_chapter,$get_ch
             }
         }
     }
-    echo "<p>";
-var_dump($_GET);
 };
 ?>
