@@ -15,6 +15,31 @@ h2 {
 h3{
 	margin: 0;
 }
+.atuiin-btn {
+	height: 5vh;
+	width: 16vh;
+	display: inline-flex;
+	position: relative;
+	font-size: 2vh;
+	line-height: 2vh;
+	padding: 2vh 2vh;
+	color: #a11010;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', Тahoma, sans-serif;
+	background: #d25858;
+	cursor: pointer;
+	border: 0.1vh solid #912a2a;
+	overflow: hidden;
+	text-decoration: none;
+	margin: 0;
+}
+.atuiin-btn:hover:before,
+.atuiin-btn:active:before,
+.atuiin-btn:focus:before {
+	right: 1vh;
+}
+
 
 .atuin-btn {
 	height: 5vh;
@@ -42,30 +67,33 @@ h3{
 }
 
 
-
-
 .vertical-menu {
 	width: 10vh;
 	margin-top: 1vh;
-	border: 0.3vh solid #800000;
 	margin-left: 1vh;
 
 }
 
+
 .vertical-menu a {
+
 	font-size: 2vh;
-	background-color: #090606;
+	background-color: #ab2525;
 	color: #ffffff;
 	display: flex;
 	padding: 1vh;
 	text-decoration: none;
+	justify-content: center;
+
 }
 
 .vertical-menu a:hover {
+
 	background-color: #ccc;
 }
 
 .vertical-menu a.active {
+
 	font-size: 2vh;
 	background-color: #4CAF50;
 	color: #8c0000;

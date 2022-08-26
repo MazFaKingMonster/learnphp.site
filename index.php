@@ -2,55 +2,34 @@
     <head>
         <meta charset="UTF-8">
         <?php
-            include "link.html"  //cылки на css
+            include "link.html";  //cылки на css
+            include_once 'heeds.inc.php';
+            include_once 'structure.inc.php';
         ?>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     </head>
 
 <body>
-    <div class="header"><h1>
+    <div class="header">
 
-        <style type="text/css">
 
-            .meni {
-                margin: 0;
-                padding: 0;
-            }
-            .meni li {
-                margin: 0 10px 0 0;
-                padding: 0;
-                display: inline-block;
-            }
-        </style>
-            <div class="search-box">
-                <input class="search-txt" type="text" name="" placeholder="Type to search">
-                <span class="material-symbols-outlined">
-search
-</span>
+        <a class="atuiin-btn" href="index.php">Learn</a>
 
-                </a>
-
+            <div class="meni">
+                <?php
+                include_once 'draw_top_menu.inc.php';
+                draw_top_menu($sections_menu);
+                ?>
             </div>
 
-            <button class="atuin-btn"><a href="index.php">Main                           </a></button>
-        <ul class="meni">
-            <button class="atuin-btn"><a  href="index.php?id=   do-while">Do-While       </a></button>
-            <button class="atuin-btn"><a  href="index.php?id=   for">For                 </a></button>
-            <button class="atuin-btn"><a  href="index.php?id=   foreach">Foreach         </a></button>
-            <button class="atuin-btn"><a  href="index.php?id=   functions">Functionh     </a></button>
-            <button class="atuin-btn"><a  href="index.php?id=   if">If                   </a></button>
-            <button class="atuin-btn"><a  href="index.php?id=   switch">Switch           </a></button>
-            <button class="atuin-btn"><a  href="index.php?id=   types">Types             </a></button>
-            <button class="atuin-btn"><a  href="index.php?id=   while">While             </a></button>
-        </ul>
 
     </h1></div>
     <h3>
-        <body>
+
         <div class="navigation">
             <div class="userBx">
                 <div class="imgBx">
@@ -77,59 +56,31 @@ search
                 navigation.classList.toggle('active')
             }
         </script>
-        </body>
+
     </h3>
 
-</body>
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-<body>
+
 
 <div class="vertical-menu">
-    <a href="#" class="active">Home</a>
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 4</a>
+
+<?php
+include 'draw_sidebar_menu.inc.php';
+draw_sidebar_menu($sections_menu, $get_sn, $get_ns);
+?>
+
+
+
 </div>
-</body>
+
     <div class="content">
-
         <?php
-
-        $id = strtolower(strip_tags(trim($_GET['id'])));
-
-        switch($id){
-            case 'do-while':
-                include 'learning_fucking_php/fucking_do-while.inc.php';
-                break;
-            case 'for':
-                include 'learning_fucking_php/fucking_for.inc.php';
-                break;
-            case 'foreach':
-                include 'learning_fucking_php/fucking_foreach.inc.php';
-                break;
-            case 'functions':
-                include 'learning_fucking_php/fucking_functions.inc.php';
-                break;
-            case 'if':
-                include 'learning_fucking_php/fucking_if.inc.php';
-                break;
-            case 'switch':
-                include 'learning_fucking_php/fucking_switch.inc.php';
-                break;
-            case 'types':
-                include 'learning_fucking_php/fucking_types.inc.php';
-                break;
-            case 'while':
-                include 'learning_fucking_php/fucking_while.inc.php';
-                break;
-            default:
-                include 'learning_fucking_php/fucking.php';
-        }
+        include_once 'show_content.inc.php';
+        show_content($sections_menu, $get_sn,$get_ns,$get_ls);
         ?>
 
     </div>
