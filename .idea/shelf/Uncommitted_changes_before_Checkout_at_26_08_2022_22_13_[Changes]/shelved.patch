@@ -1,0 +1,15 @@
+Index: styles/Profile.css
+===================================================================
+diff --git a/styles/Profile.css b/styles/Profile.css
+--- a/styles/Profile.css	
++++ b/styles/Profile.css	
+@@ -5,8 +5,8 @@
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Aboreto', cursive;
+-
+ }
++
+ body {
+     background: url("https://funart.pro/uploads/posts/2021-04/thumbs/1618586520_30-funart_pro-p-oboi-fon-anime-rozovaya-devochka-35.jpg");
+     background-attachment: fixed;
