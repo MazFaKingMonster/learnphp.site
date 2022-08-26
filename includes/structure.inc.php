@@ -38,7 +38,8 @@ $sections_menu = array(
             'for'=>'for',
             'while'=>'while',
             'do-while'=>'do-while',
-            'switch'=>'switch'
+            'switch'=>'switch',
+            'foreach'=>'foreach'
         ),
         'types'=>array(
             'type'=>'type',
