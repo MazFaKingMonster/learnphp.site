@@ -1,21 +1,21 @@
 <?php
-function draw_sidebar_menu ($sections_menu, $get_sn,$get_ns){
-    foreach ($sections_menu as $name=> $s_name1){
-        if($name == $get_sn){
-            foreach ($s_name1 as $name_section => $link_section){
+function draw_sidebar_menu ($library, $get_library_section,$get_library_chapter){
+    foreach ($library as $library_section=> $library_chapter){
+        if($library_section == $get_library_section){
+            foreach ($library_chapter as $chapter_name => $chapter_department){
                 echo "<br><p style='margin-left: 15% '>
                             <a 
-                            href=' index.php?sec_name=$name
-                                  &name_section=$name_section'> $name_section</a>
+                            href=' index.php?library_section=$library_section
+                                  &library_chapter=$chapter_name'> $chapter_name</a>
                         </p>";
 
-                if($name_section == $get_ns){
-                    foreach ($link_section as $item => $value){
+                if($chapter_name == $get_library_chapter){
+                    foreach ($chapter_department as $paragraph => $page){
                         echo "<br><p style='margin-left: 30% '>
                             <a
-                            href=' index.php?sec_name=$name
-                                  &name_section=$name_section
-                                  &link_section=$item'> $item</a>
+                            href=' index.php?library_section=$library_section
+                                  &library_chapter=$chapter_name
+                                  &chapter_name=$paragraph'> $paragraph</a>
                         </p>";
                     }
                 }

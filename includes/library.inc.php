@@ -1,5 +1,5 @@
 <?php
-$sections_menu = array(
+$library = array(
     'html' => array(
         'tags'=>array(
             'tag'=>'tag',

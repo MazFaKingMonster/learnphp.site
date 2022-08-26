@@ -1,8 +1,8 @@
 <?php
-function draw_top_menu ($sections_menu){
+function draw_top_menu ($library){
 
-  foreach ($sections_menu as $name => $s_name){
-      echo "<p><a href='index.php?sec_name=$name'>$name</a></p>";
+  foreach ($library as $library_section => $library_chapter){
+      echo "<p><a href='index.php?library_section=$library_section'>$library_section</a></p>";
       }
 };
 ?>

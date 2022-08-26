@@ -1,26 +1,41 @@
 <?php
-function show_content($sections_menu,$get_sn,$get_ns,$get_ls){
-    foreach ($sections_menu as $k1 => $v1){
-        foreach ($v1 as $k2 => $v2){
-            foreach ($v2 as $k3 => $v3){
-                if($get_sn == "$k1" && $get_ns == "$k2" && $get_ls == "$k3"){
-                    include "library/$get_sn/$get_ns/$get_ls.inc.php";
+function show_content($library,$get_library_section,$get_library_chapter,$get_chapter_name){
+    foreach ($library as $library_section => $library_chapter){
+        foreach ($library_chapter as $chapter_name => $chapter_department){
+            foreach ($chapter_department as $paragraph => $page){
+                if(     $get_library_section == "$library_section"
+                    &&  $get_library_chapter == "$chapter_name"
+                    &&  $get_chapter_name == "$paragraph"){
+
+                    include "library/$get_library_section/$get_library_chapter/$get_chapter_name.inc.php";
                     continue;
                 }
-                if ($get_sn == "$k1" && $get_ns == "$k2" && !$get_ls == "$k3"){
-                    include "library/$get_sn/$get_ns/$k3.inc.php";
+                if (    $get_library_section == "$library_section"
+                    &&  $get_library_chapter == "$chapter_name"
+                    &&  !$get_chapter_name == "$paragraph"){
+
+                    include "library/$get_library_section/$get_library_chapter/$paragraph.inc.php";
+
                     continue;
                 }
-                if ($get_sn == "$k1" && !$get_ns == "$k2" && !$get_ls == "$k3"){
-                    include "library/$get_sn/$k2/$k3.inc.php";
+                if ($get_library_section == "$library_section"
+                    && !$get_library_chapter == "$chapter_name"
+                    && !$get_chapter_name == "$paragraph"){
+
+                    include "library/$get_library_section/$chapter_name/$paragraph.inc.php";
+
                     continue;
                 }
-                if (!$get_sn == "$k1" && !$get_ns == "$k2" && !$get_ls == "$k3"){
+                if (!$get_library_section == "$library_section"
+                    && !$get_library_chapter == "$chapter_name"
+                    && !$get_chapter_name == "$paragraph"){
+
                     include_once "pages/hello.inc.php";
                 }
             }
         }
     }
-
+    echo "<p>";
+var_dump($_GET);
 };
 ?>

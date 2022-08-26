@@ -1,7 +1,7 @@
 <html lang="ru">
 <?php
     include_once 'includes/heeds.inc.php';
-    include_once 'includes/structure.inc.php';
+    include_once 'includes/library.inc.php';
     include_once 'interface/draw_top_menu.inc.php';
     include_once 'interface/draw_sidebar_menu.inc.php';
     include_once 'interface/show_content.inc.php';
@@ -22,15 +22,15 @@
     <a href="index.php">Learn</a>
     <?php
 
-    draw_top_menu($sections_menu);
-    draw_sidebar_menu($sections_menu, $get_sn,$get_ns);
+    draw_top_menu($library);
+    draw_sidebar_menu($library, $get_library_section,$get_library_chapter);
     ?>
 </div>
 <div class="content">
 
     <?php
 
-    show_content($sections_menu, $get_sn,$get_ns,$get_ls);
+    show_content($library, $get_library_section,$get_library_chapter,$get_chapter_name);
     ?>
 
 </div>
