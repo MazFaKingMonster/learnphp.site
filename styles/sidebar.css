@@ -11,13 +11,12 @@
 
 }
 .sidebar-menu ul{
-
+    display: block;
 }
 .sidebar-menu ul li{
     list-style-type: none;
 }
 .sidebar-menu ul li button{
-    margin-left: -30%;
     min-width: 16vh;
     min-height: 6vh;
     background-color: white; /* Green */
