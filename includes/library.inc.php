@@ -43,6 +43,9 @@ $library = array(
         ),
         'types'=>array(
             'type'=>'type',
+            'cookie'=>'cookie',
+            'headers'=>'headers',
+            'session'=>'session',
         ),
         'constructions'=>array(
             'construction'=>'construction',

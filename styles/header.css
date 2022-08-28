@@ -9,6 +9,20 @@
     margin-top: 1vh;
     color: white;
 }
+.user_name{
+
+}
+.user_name label{
+    font-size: 18px;
+    color: white;
+}
+.user_name label input {
+    border: 3px solid green;
+}
+.visit{
+    font-size: 14px;
+    color: white;
+}
 .top_menu{
 
 }

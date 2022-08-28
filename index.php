@@ -1,3 +1,4 @@
+<?php session_start();?>
 <html lang="eu">
 <head>
     <meta charset="UTF-8">
@@ -5,6 +6,7 @@
 
     <?php
         include_once "includes/link.inc.php";
+        include_once "includes/cookie.inc.php";
         include_once 'includes/heeds.inc.php';
         include_once 'includes/library.inc.php';
         include_once 'includes/fonts.inc.php';
@@ -13,6 +15,39 @@
 <body>
     <div class="header">
         <a class="main_page" href="index.php">Learn</a>
+        <div class="visit">
+        <?php
+        if(!$_POST['jerk_name'] && !$_SESSION['user_name']) {
+            echo "
+                <div class='user_name'>
+                    <form action='index.php' method='POST'>
+                        <label>Слышь придурок, напиши как нам тебя называть!
+                            <input name='jerk_name' type='text'>
+                            <input type='submit' value='Запомни сука!'>
+                        </label>
+                    </form>
+                </div>
+            ";
+        }
+        if(!$visit_counter){
+            echo "<p>Привет путник!";
+        }elseif($_POST['jerk_name']){
+            $_SESSION['user_name'] = $_POST['jerk_name'];
+            echo "<p>Привет " . $_SESSION['user_name'];
+            echo "<p>Мы тебя помним! Ты заходил к нам $last_visit";
+        }
+        elseif($_SESSION['user_name']){;
+            echo "<p>Привет " . $_SESSION['user_name'];
+            echo "<p>Мы тебя помним! Ты заходил к нам $last_visit";}
+        else{
+            echo "<p>Привет придурок!";
+            echo "<p>Мы тебя помним! Ты заходил к нам $last_visit";
+        }
+        if($_POST["jerk_name"] or $_SESSION['user_name']){
+            echo "<form action='kill_session.inc.php'> <input type='submit' value='Забыть нахуй!'/></form>";
+        }
+        ?>
+        </div>
             <div class="top_menu">
                 <ul>
                         <?php
