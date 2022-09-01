@@ -17,18 +17,6 @@
         <a class="main_page" href="index.php">Learn</a>
         <div class="visit">
         <?php
-        if(!$_POST['jerk_name'] && !$_SESSION['user_name']) {
-            echo "
-                <div class='user_name'>
-                    <form action='index.php' method='POST'>
-                        <label>Слышь придурок, напиши как нам тебя называть!
-                            <input name='jerk_name' type='text'>
-                            <input type='submit' value='Запомни сука!'>
-                        </label>
-                    </form>
-                </div>
-            ";
-        }
         if(!$visit_counter){
             echo "<p>Привет путник!";
         }elseif($_POST['jerk_name']){
@@ -45,6 +33,29 @@
         }
         if($_POST["jerk_name"] or $_SESSION['user_name']){
             echo "<form action='kill_session.inc.php'> <input type='submit' value='Забыть нахуй!'/></form>";
+        }
+        if(!$_POST['jerk_name'] && !$_SESSION['user_name'] && !$_COOKIE['visit_counter']) {
+            echo "
+                <div class='user_name'>
+                    <form action='index.php' method='POST'>
+                        <label>Напиши как нам тебя называть!
+                            <input name='jerk_name' type='text'>
+                            <input type='submit' value='Запомнить!'>
+                        </label>
+                    </form>
+                </div>
+            ";
+        }elseif(!$_POST['jerk_name'] && !$_SESSION['user_name']) {
+            echo "
+                <div class='user_name'>
+                    <form action='index.php' method='POST'>
+                        <label>Слышь придурок, напиши как нам тебя называть!
+                            <input name='jerk_name' type='text'>
+                            <input type='submit' value='Запомни сука!'>
+                        </label>
+                    </form>
+                </div>
+            ";
         }
         ?>
         </div>

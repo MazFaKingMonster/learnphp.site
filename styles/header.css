@@ -9,6 +9,17 @@
     margin-top: 1vh;
     color: white;
 }
+.visit{
+
+}
+.visit p{
+    font-size: 18px;
+    color: white;
+}
+.visit label{
+    font-size: 16px;
+    color: white;
+}
 .user_name{
 
 }
@@ -18,10 +29,6 @@
 }
 .user_name label input {
     border: 3px solid green;
-}
-.visit{
-    font-size: 14px;
-    color: white;
 }
 .top_menu{
 
